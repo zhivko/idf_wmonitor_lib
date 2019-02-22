@@ -8,12 +8,12 @@
 #include <lwip/sockets.h>
 #include <lwip/sys.h>
 
-#include "idf_wmonitor_config.h"
-#include "idf_wmonitor_coredump.h"
-#include "idf_wmonitor_mdns.h"
-#include "idf_wmonitor_ota.h"
-#include "idf_wmonitor_private.h"
-#include "idf_wmonitor_wifi.h"
+#include "include/idf_wmonitor/idf_wmonitor_config.h"
+#include "include/idf_wmonitor/idf_wmonitor_coredump.h"
+#include "include/idf_wmonitor/idf_wmonitor_mdns.h"
+#include "include/idf_wmonitor/idf_wmonitor_ota.h"
+#include "include/idf_wmonitor/idf_wmonitor_private.h"
+#include "include/idf_wmonitor/idf_wmonitor_wifi.h"
 
 // Compatibility with IDF < 3.2
 #if !defined(WIFI_TASK_CORE_ID)

@@ -3,7 +3,7 @@
 
 #include <esp_wifi.h>
 
-#include "idf_wmonitor_hostname.h"
+#include "include/idf_wmonitor/idf_wmonitor_hostname.h"
 
 esp_err_t idf_wmonitor_get_hostname(char *buf, size_t size)
 {

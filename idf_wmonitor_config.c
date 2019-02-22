@@ -1,6 +1,6 @@
 #include <nvs_flash.h>
 
-#include "idf_wmonitor_config.h"
+#include "include/idf_wmonitor/idf_wmonitor_config.h"
 
 #define STORAGE_NAMESPACE "iw"
 #define STORAGE_CONFIG_KEY "cfg"

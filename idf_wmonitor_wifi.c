@@ -2,9 +2,9 @@
 
 #include <esp_wifi.h>
 
-#include "idf_wmonitor_hostname.h"
+#include "include/idf_wmonitor/idf_wmonitor_hostname.h"
 
-#include "idf_wmonitor_wifi.h"
+#include "include/idf_wmonitor/idf_wmonitor_wifi.h"
 
 esp_err_t idf_wmonitor_start_wifi_ap(idf_wmonitor_opts_t *opts, bool fallback)
 {

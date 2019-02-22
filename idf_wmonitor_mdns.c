@@ -1,8 +1,8 @@
 #include <mdns.h>
 
-#include "idf_wmonitor_hostname.h"
+#include "include/idf_wmonitor/idf_wmonitor_hostname.h"
 
-#include "idf_wmonitor_mdns.h"
+#include "include/idf_wmonitor/idf_wmonitor_mdns.h"
 
 esp_err_t idf_wmonitor_mdns_start(in_port_t port)
 {

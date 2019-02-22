@@ -1,6 +1,6 @@
 #include <esp_partition.h>
 
-#include "idf_wmonitor_coredump.h"
+#include "include/idf_wmonitor/idf_wmonitor_coredump.h"
 
 // ESP32 flash coredump format contains a header with the following info
 // (all 32 bit little endian unsigned):
@@ -10,7 +10,7 @@
 // Found in espcoredump.py.
 #define ESP_COREDUMP_MAGIC 0xE32C04ED
 
-static const esp_partition_t *coredump_partition(void)
+esp_partition_t *coredump_partition(void)
 {
     const esp_partition_t *p = NULL;
     esp_partition_iterator_t iter = esp_partition_find(ESP_PARTITION_TYPE_DATA, ESP_PARTITION_SUBTYPE_DATA_COREDUMP, NULL);
@@ -22,7 +22,7 @@ static const esp_partition_t *coredump_partition(void)
     return p;
 }
 
-static uint32_t idf_wmonitor_coredump_size_from_partition(const esp_partition_t *p)
+uint32_t idf_wmonitor_coredump_size_from_partition(const esp_partition_t *p)
 {
     if (p)
     {
